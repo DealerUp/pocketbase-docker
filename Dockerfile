@@ -2,7 +2,7 @@ FROM --platform=$BUILDPLATFORM alpine:3.16.0 as downloader
 
 ARG POCKETBASE_VERSION=0.17.5
 ARG TARGETARCH
-ARG TARGETPLATFORM
+ARG TARGETPLATFORM=linux/amd64
 
 RUN apk update && apk add curl wget unzip
 RUN addgroup -S pocketbase && adduser -S pocketbase -G pocketbase
