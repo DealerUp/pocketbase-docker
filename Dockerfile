@@ -24,7 +24,7 @@ RUN addgroup -S pocketbase && adduser -S pocketbase -G pocketbase
 RUN chown pocketbase:pocketbase /usr/local/bin/pocketbase
 # RUN mkdir /pb_data
 RUN chown pocketbase:pocketbase /pb_data
-# RUN mkdir /pb_migrations
+RUN mkdir /pb_migrations
 RUN chown pocketbase:pocketbase /pb_migrations
 RUN chmod 710 /usr/local/bin/pocketbase
 
